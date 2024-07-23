@@ -5,12 +5,12 @@
 IT 311 - APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES.<br>
 BSIT- BA: 3107<br>
 
-# PROJECT MEMBERS:
+# PROJECT MEMBERS 📝:
 
-  -Comia, Mikaela Aeriel F.<br> 🙋‍♀️
-  -Estrellana, Arabella Jane <br> 🙋‍♀️
-  -Pabelico, Mathew Ares F. <br> 🙋‍♂️
-  -Villaruel, Angel Rose D. <br> 🙋‍♀️
+  -Comia, Mikaela Aeriel F.<br> 
+  -Estrellana, Arabella Jane <br> 
+  -Pabelico, Mathew Ares F. <br> 
+  -Villaruel, Angel Rose D. <br> 
 
 ## OVERVIEW:
 NoteFlow includes the development of a mobile application that integrates various learning management functionalities. It also includes organize learning material for educators and students. It combines note taking and reminder into one flatform. This application will help the students and educators to improve their organization and efficiency in managing educational materials.<br>

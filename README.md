@@ -28,6 +28,8 @@ The aims of NoteFlow is to enable effective handling of educational materials an
 • Including functionalities for organizing notes in text format.<br>
 
 
-## FUNCTIONALITIES:
+## 📋 FUNCTIONALITIES:
+• 
 
-## UI: 
+## 🖼️ GUI:
+## 💻 PROGRAMMING LANDUAGES:

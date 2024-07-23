@@ -6,6 +6,7 @@ IT 311 - APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES.<br>
 BSIT- BA: 3107<br>
 
 # PROJECT MEMBERS:
+
   -Comia, Mikaela Aeriel F. <br> 🙋‍♀️
   -Estrellana, Arabella Jane <br> 🙋‍♀️
   -Pabelico, Mathew Ares F. <br> 🙋‍♂️

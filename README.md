@@ -32,4 +32,4 @@ The aims of NoteFlow is to enable effective handling of educational materials an
 • 
 
 ## 🖼️ GUI:
-## 💻 PROGRAMMING LANDUAGES:
+## 💻 PROGRAMMING LANGUAGES:

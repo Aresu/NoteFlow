@@ -12,6 +12,8 @@ BSIT- BA: 3107<br>
 • Pabelico, Mathew Ares F. <br> 
 • Villaruel, Angel Rose D. <br> 
 
+## 🌍 Sustainable Development Goals (SDG)
+
 ## 📝 OVERVIEW:
 NoteFlow includes the development of a mobile application that integrates various learning management functionalities. It also includes organize learning material for educators and students. It combines note taking and reminder into one flatform. This application will help the students and educators to improve their organization and efficiency in managing educational materials.<br>
 
@@ -23,5 +25,6 @@ The aims of NoteFlow is to enable effective handling of educational materials an
 • Including functionalities for organizing notes in text format.<br>
 
 
-## GUI:
+## FUNCTIONALITIES:
 
+## UI: 

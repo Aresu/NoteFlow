@@ -1,4 +1,4 @@
-👉  ## NoteFlow: The Smart Way to Manage Learning Contents   👈
+👉 ## NoteFlow: The Smart Way to Manage Learning Contents 👈
 
 
 ## FINAL PROJECT: 

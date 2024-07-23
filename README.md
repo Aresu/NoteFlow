@@ -13,7 +13,8 @@ BSIT- BA: 3107<br>
 • Villaruel, Angel Rose D. <br> 
 
 ## 🌍 Sustainable Development Goals (SDG)
-![SDG 4](https://github.com/user-attachments/assets/9141fc8b-3da4-4820-a5d2-505e2659e12e)
+![SDG](https://github.com/user-attachments/assets/9c6f87e1-2f56-4047-a9fb-aaa51ffe7792)
+
 
 NoteFlow supports Sustainable Development Goal No. 4 of the UN: Quality Education by organizing and handling educational materials effectively and provide academic performance for both students and educators.<br>
 

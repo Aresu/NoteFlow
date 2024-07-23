@@ -1,9 +1,8 @@
-#NoteFlow: The Smart Way to Manage Learning Contents
+# NoteFlow: The Smart Way to Manage Learning Contents
 
 
 ## FINAL PROJECT: 
 IT 311 - APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES.<br>
-
 BSIT- BA: 3107<br>
 ## Description
 The dental appointment scheduling system aims to increase efficiency, reduce waiting time, and decrease manual work. Moreover, they can regulate patient flow better with appointment system solutions.<br>

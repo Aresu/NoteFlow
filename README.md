@@ -1,7 +1,7 @@
 ## NoteFlow: The Smart Way to Manage Learning Contents ✍️
 
 
-## FINAL PROJECT: 
+## 📃 FINAL PROJECT: 
 IT 311 - APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES.<br>
 BSIT- BA: 3107<br>
 

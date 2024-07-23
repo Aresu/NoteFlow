@@ -4,6 +4,11 @@
 ## FINAL PROJECT: 
 IT 311 - APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES.<br>
 BSIT- BA: 3107<br>
+# PROJECT MEMBERS:
+  -Comia, Mikaela Aeriel F.
+  -Estrellana, Arabella Jane
+  -Pabelico, Mathew Ares F.
+  -Villaruel, Angel Rose D.
 ## Description
 The dental appointment scheduling system aims to increase efficiency, reduce waiting time, and decrease manual work. Moreover, they can regulate patient flow better with appointment system solutions.<br>
 These are some of the specific objectives of our system.<br>

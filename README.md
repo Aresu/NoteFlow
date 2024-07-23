@@ -13,6 +13,7 @@ BSIT- BA: 3107<br>
 • Villaruel, Angel Rose D. <br> 
 
 ## 🌍 Sustainable Development Goals (SDG)
+![SDG 4](https://github.com/user-attachments/assets/9141fc8b-3da4-4820-a5d2-505e2659e12e)
 
 ## 📝 OVERVIEW:
 NoteFlow includes the development of a mobile application that integrates various learning management functionalities. It also includes organize learning material for educators and students. It combines note taking and reminder into one flatform. This application will help the students and educators to improve their organization and efficiency in managing educational materials.<br>

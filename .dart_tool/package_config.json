@@ -164,13 +164,13 @@
       "languageVersion": "3.3"
     },
     {
-      "name": "note_flow",
+      "name": "noteflow",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2024-07-25T08:29:46.185404Z",
+  "generated": "2024-07-25T15:25:39.743532Z",
   "generator": "pub",
   "generatorVersion": "3.4.4",
   "flutterRoot": "file:///C:/Users/karen/flutter",

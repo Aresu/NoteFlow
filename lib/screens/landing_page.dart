@@ -38,9 +38,9 @@ class LandingPage_Screen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const Text(
-                    'Think it.\nMake it.',
+                    'Organize.\nLearn.',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 0, 0, 0),
                       fontSize: 40,
                       fontWeight: FontWeight.bold,
                     ),
@@ -50,7 +50,7 @@ class LandingPage_Screen extends StatelessWidget {
                     'Welcome to NoteFlow! \nDiscover the pinnacle of productivity and efficient note-taking.',
                     textAlign: TextAlign.left,
                     style: TextStyle(
-                      color: Colors.white70,
+                      color: Color.fromARGB(179, 0, 0, 0),
                       fontSize: 16,
                     ),
                   ),
@@ -65,8 +65,8 @@ class LandingPage_Screen extends StatelessWidget {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.black,
-                      backgroundColor: Colors.white,
+                      foregroundColor: Color.fromARGB(255, 255, 255, 255),
+                      backgroundColor: Color.fromARGB(255, 0, 0, 0),
                       minimumSize: const Size(double.infinity, 50),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),

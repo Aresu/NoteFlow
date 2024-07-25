@@ -55,116 +55,6 @@ class TabNavigation extends StatelessWidget {
   }
 }
 
-class ContinueDialog extends StatelessWidget {
-  final String message;
-
-  const ContinueDialog({super.key, required this.message});
-
-  @override
-  Widget build(BuildContext context) {
-    return AlertDialog(
-      title: const Text("Profile"),
-      content: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          _buildTextField("Username", "Enter your username"),
-          _buildTextField("First Name", "Enter your first name"),
-          _buildTextField("Last Name", "Enter your last name"),
-          _buildTextField("Address", "Enter your address"),
-          _buildTextField("Email", "Enter your email"),
-        ],
-      ),
-      actions: [
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          style: TextButton.styleFrom(
-            foregroundColor: Colors.white,
-            backgroundColor: Colors.black,
-          ),
-          child: const Text("Continue"),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildTextField(String labelText, String hintText) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            labelText,
-            style: const TextStyle(fontSize: 12),
-          ),
-          SizedBox(
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: hintText,
-                border: const OutlineInputBorder(),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class UploadDialog extends StatelessWidget {
-  final String message;
-
-  const UploadDialog({super.key, required this.message});
-
-  @override
-  Widget build(BuildContext context) {
-    return AlertDialog(
-      title: const Text("Photos"),
-      content: Text(message),
-      actions: [
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          style: TextButton.styleFrom(
-            foregroundColor: Colors.white,
-            backgroundColor: Colors.black,
-          ),
-          child: const Text("Upload"),
-        ),
-      ],
-    );
-  }
-}
-
-class AddDialog extends StatelessWidget {
-  final String message;
-
-  const AddDialog({super.key, required this.message});
-
-  @override
-  Widget build(BuildContext context) {
-    return AlertDialog(
-      title: const Text("Skills"),
-      content: Text(message),
-      actions: [
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          style: TextButton.styleFrom(
-            foregroundColor: Colors.white,
-            backgroundColor: Colors.black,
-          ),
-          child: const Text("Add"),
-        ),
-      ],
-    );
-  }
-}
-
 class ProfileCompletionCard {
   final String title;
   final IconData icon;
@@ -192,30 +82,39 @@ List<ProfileCompletionCard> profileCompletionCards = [
 class CustomListTile {
   final IconData icon;
   final String title;
+  final List<String> subNotes;
+
   CustomListTile({
     required this.icon,
     required this.title,
+    required this.subNotes,
   });
 }
+
 
 List<CustomListTile> customListTiles = [
   CustomListTile(
     icon: Iconsax.document,
     title: "Daily Notes",
+    subNotes: ["Note 1", "Note 2", "Note 3"],
   ),
   CustomListTile(
     icon: Iconsax.note,
     title: "Quick Note",
+    subNotes: ["Note 4", "Note 5"],
   ),
   CustomListTile(
     icon: Iconsax.tag_right,
     title: "Task List",
+    subNotes: ["Task 1", "Task 2"],
   ),
   CustomListTile(
     icon: Iconsax.document_sketch,
     title: "Untitled",
+    subNotes: ["Untitled Note 1", "Untitled Note 2"],
   ),
 ];
+
 
 class AppBarText1 extends StatelessWidget implements PreferredSizeWidget {
   const AppBarText1({super.key});

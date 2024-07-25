@@ -2,10 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import '../helper/functionMethodClass.dart';
 
-class Home_Screen extends StatelessWidget {
+class Home_Screen extends StatefulWidget {
   final String email;
 
   Home_Screen({Key? key, required this.email}) : super(key: key);
+
+  @override
+  _Home_ScreenState createState() => _Home_ScreenState();
+}
+
+class _Home_ScreenState extends State<Home_Screen> {
+  late List<bool> _isExpanded;
+
+  @override
+  void initState() {
+    super.initState();
+    _isExpanded = List.filled(customListTiles.length, false);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +36,7 @@ class Home_Screen extends StatelessWidget {
                   width: 40,
                   color: const Color.fromARGB(255, 55, 55, 55),
                   child: const Icon(Iconsax.user,
-                      color: Color.fromARGB(255, 146, 146, 146)),
+                  color: Color.fromARGB(255, 146, 146, 146)),
                 ),
               ),
               const SizedBox(width: 8.0),
@@ -38,7 +51,7 @@ class Home_Screen extends StatelessWidget {
                         fontWeight: FontWeight.w800),
                   ),
                   Text(
-                    email,
+                    widget.email,
                     style: const TextStyle(
                         fontSize: 12.0,
                         color: Color.fromARGB(255, 104, 104, 104)),
@@ -47,13 +60,86 @@ class Home_Screen extends StatelessWidget {
               ),
               const Spacer(),
               IconButton(
-                icon: const Icon(
-                  Iconsax.more_circle,
-                  color: Color.fromARGB(255, 223, 223, 223),
+                icon: PopupMenuButton<String>(
+                  color: const Color.fromARGB(255, 40, 40, 40),
+                  icon: const Icon(Iconsax.more_circle, color: Colors.white),
+                  offset: const Offset(-40, 0),
+                  onSelected: (value) {
+                    // Handle menu item selection
+                    if (value == 'edit') {
+                      // Edit action
+                    } else if (value == 'delete') {
+                      // Delete action
+                    }
+                  },
+                  itemBuilder: (BuildContext context) => [
+                    const PopupMenuItem(
+                      value: 'members',
+                      child: ListTile(
+                        leading: Icon(
+                          Iconsax.people,
+                          color: Color.fromARGB(255, 119, 119, 119),
+                        ),
+                        title: Text(
+                          "Members",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const PopupMenuItem(
+                      value: 'settings',
+                      child: ListTile(
+                        leading: Icon(
+                          Iconsax.setting,
+                          color: Color.fromARGB(255, 119, 119, 119),
+                        ),
+                        title: Text(
+                          "Settings",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const PopupMenuItem(
+                      value: 'trash',
+                      child: ListTile(
+                        leading: Icon(
+                          Iconsax.trash,
+                          color: Color.fromARGB(255, 119, 119, 119),
+                        ),
+                        title: Text(
+                          "Trash",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const PopupMenuItem(
+                      value: 'help',
+                      child: ListTile(
+                        leading: Icon(
+                          Iconsax.message_question,
+                          color: Color.fromARGB(255, 119, 119, 119),
+                        ),
+                        title: Text(
+                          "Help",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-                onPressed: () {
-                  // Action for the more options button
-                },
+                onPressed: () {},
               ),
             ],
           ),
@@ -178,7 +264,7 @@ class Home_Screen extends StatelessWidget {
                   const SizedBox(width: 5),
                   GestureDetector(
                     onTap: () {
-                      // Add your onPressed logic for Iconsax.add here
+                      
                     },
                     child: const Icon(
                       Iconsax.add,
@@ -190,72 +276,146 @@ class Home_Screen extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 10),
-          ...List.generate(
-            customListTiles.length,
-            (index) {
+          ListView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: customListTiles.length,
+            itemBuilder: (context, index) {
               final tile = customListTiles[index];
               return Padding(
                 padding: const EdgeInsets.only(bottom: 5),
                 child: Card(
-                  color: const Color.fromARGB(255, 40, 40, 40),
-                  child: ListTile(
-                    leading: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Icon(
-                          Icons.chevron_right,
-                          color: Colors.white,
-                        ),
-                        const SizedBox(width: 5),
-                        Icon(
-                          tile.icon,
-                          color: const Color.fromARGB(255, 119, 119, 119),
-                        ),
-                      ],
-                    ),
-                    title: Text(
-                      tile.title,
-                      textAlign: TextAlign.left,
-                      style: const TextStyle(color: Colors.white),
-                    ),
-                    trailing: PopupMenuButton<String>(
-                      color: const Color.fromARGB(255, 40, 40, 40),
-                      icon: const Icon(Icons.more_vert, color: Colors.white),
-                      onSelected: (value) {
-                        // Handle menu item selection
-                        if (value == 'edit') {
-                          // Edit action
-                        } else if (value == 'delete') {
-                          // Delete action
-                        }
-                      },
-                      itemBuilder: (BuildContext context) => [
-                        const PopupMenuItem(
-                          value: 'edit',
-                          child: Text(
-                            'Edit',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                        const PopupMenuItem(
-                          value: 'rename',
-                          child: Text(
-                            'Rename',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                        const PopupMenuItem(
-                          value: 'delete',
-                          child: Text(
-                            'Delete',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                    onTap: () {
-                      // Handle tile tap
+                  color: const Color.fromARGB(255, 50, 50, 50),
+                  child: ExpansionPanelList(
+                    elevation: 0,
+                    expandedHeaderPadding: EdgeInsets.zero,
+                    expansionCallback: (panelIndex, isExpanded) {
+                      setState(() {
+                        _isExpanded[index] = !_isExpanded[index];
+                      });
                     },
+                    children: [
+                      ExpansionPanel(
+                        canTapOnHeader: true,
+                        headerBuilder: (context, isExpanded) {
+                          return ListTile(
+                            leading: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const SizedBox(width: 5),
+                                Icon(
+                                  tile.icon,
+                                  color:
+                                      const Color.fromARGB(255, 119, 119, 119),
+                                ),
+                              ],
+                            ),
+                            title: Text(
+                              tile.title,
+                              style: const TextStyle(color: Colors.white),
+                            ),
+                          );
+                        },
+                        body: Padding(
+                          padding: const EdgeInsets.only(left: 25),
+                          child: ListView.builder(
+                            shrinkWrap: true,
+                            physics: const NeverScrollableScrollPhysics(),
+                            itemCount: tile.subNotes.length,
+                            itemBuilder: (context, subIndex) {
+                              return ListTile(
+                                leading: const Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    SizedBox(width: 5),
+                                    Icon(
+                                      Icons.chevron_right,
+                                      color: Color.fromARGB(
+                                          255, 119, 119, 119),
+                                    ),
+                                  ],
+                                ),
+                                tileColor:
+                                    const Color.fromARGB(255, 32, 32, 32),
+                                title: Text(
+                                  tile.subNotes[subIndex],
+                                  style: const TextStyle(color: Colors.white),
+                                ),
+                                trailing: PopupMenuButton<String>(
+                                  color: const Color.fromARGB(255, 40, 40, 40),
+                                  offset: const Offset(-40, 0),
+                                  icon: const Icon(Icons.more_vert,
+                                      color: Colors.white),
+                                  onSelected: (value) {
+                                    // Handle menu item selection
+                                    if (value == 'edit') {
+                                      // Edit action
+                                    } else if (value == 'delete') {
+                                      // Delete action
+                                    }
+                                  },
+                                  itemBuilder: (BuildContext context) => [
+                                    const PopupMenuItem(
+                                      value: 'rename',
+                                      child: ListTile(
+                                        leading: Icon(
+                                          Iconsax.message,
+                                          color: Color.fromARGB(
+                                              255, 119, 119, 119),
+                                        ),
+                                        title: Text(
+                                          "Rename",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 14,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    const PopupMenuItem(
+                                      value: 'edit',
+                                      child: ListTile(
+                                        leading: Icon(
+                                          Iconsax.edit,
+                                          color: Color.fromARGB(
+                                              255, 119, 119, 119),
+                                        ),
+                                        title: Text(
+                                          "Edit",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 14,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    const PopupMenuItem(
+                                      value: 'edit',
+                                      child: ListTile(
+                                        leading: Icon(
+                                          Iconsax.trash,
+                                          color: Color.fromARGB(
+                                              255, 119, 119, 119),
+                                        ),
+                                        title: Text(
+                                          "Trash",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 14,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                        isExpanded: _isExpanded[index],
+                        backgroundColor: const Color.fromARGB(255, 32, 32, 32),
+                      ),
+                    ],
                   ),
                 ),
               );

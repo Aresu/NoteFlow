@@ -15,6 +15,7 @@ class _LoginPageState extends State<LoginPage_Screen> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   bool rememberUser = false;
+  bool _obscurePassword = true;
 
   final _formKey = GlobalKey<FormState>();
 
@@ -158,16 +159,23 @@ class _LoginPageState extends State<LoginPage_Screen> {
           borderSide: BorderSide(color: Colors.white),
         ),
         suffixIcon: isPassword
-            ? const Icon(
-                Iconsax.eye,
-                color: Color.fromARGB(255, 223, 223, 223),
+            ? GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _obscurePassword = !_obscurePassword;
+                  });
+                },
+                child: Icon(
+                  _obscurePassword ? Iconsax.eye : Iconsax.eye_slash,
+                  color: const Color.fromARGB(255, 223, 223, 223),
+                ),
               )
             : const Icon(
                 Iconsax.sms,
                 color: Color.fromARGB(255, 223, 223, 223),
               ),
       ),
-      obscureText: isPassword,
+      obscureText: isPassword && _obscurePassword,
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'Please enter ${isPassword ? 'password' : 'email address'}';

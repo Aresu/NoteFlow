@@ -78,9 +78,9 @@ class LandingPage_Screen extends StatelessWidget {
                   OutlinedButton(
                     onPressed: () {},
                     style: OutlinedButton.styleFrom(
-                      foregroundColor: const Color.fromARGB(255, 0, 0, 0),
+                      foregroundColor: Colors.white,
                       minimumSize: const Size(double.infinity, 50),
-                      side: const BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
+                      side: const BorderSide(color: Colors.white),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                       ),

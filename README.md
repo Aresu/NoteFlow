@@ -1,4 +1,4 @@
-![450909825_1016416653257598_5122741744063924491_n](https://github.com/user-attachments/assets/a7e3da96-5ba4-4228-a389-96f983b5c7e9)
+![noteflow_logo](https://github.com/user-attachments/assets/513aa0bb-fb61-4844-99d9-0dbeeca388b4)
 
 ## NoteFlow: The Smart Way to Manage Learning Contents ✍️
 

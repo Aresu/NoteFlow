@@ -1,4 +1,4 @@
-[math.pdf](https://github.com/user-attachments/files/16387092/math.pdf)![noteflow_logo](https://github.com/user-attachments/assets/513aa0bb-fb61-4844-99d9-0dbeeca388b4)
+![noteflow_logo](https://github.com/user-attachments/assets/513aa0bb-fb61-4844-99d9-0dbeeca388b4)
 
 ## NoteFlow: The Smart Way to Manage Learning Contents ✍️
 
@@ -44,7 +44,9 @@ The aims of NoteFlow is to enable effective handling of educational materials an
 ![inbox](https://github.com/user-attachments/assets/37a02a3a-5ffd-44a4-b078-a5c752263fde)
 ![epmty_note](https://github.com/user-attachments/assets/2075fbbe-a571-4561-872f-8c9bed3a3dac)
 
+
 ## 💻 PROGRAMMING LANGUAGES:
-![flutter](https://github.com/user-attachments/assets/16917334-5f70-4f1d-9e59-a784124004e0)
-![dart](https://github.com/user-attachments/assets/590e3892-f311-4c2f-9b0a-eed585f86718)
+![flutter](https://github.com/user-attachments/assets/bf72f3ed-e5fc-49a9-b5c7-8e94b2f26a73)
+![dart](https://github.com/user-attachments/assets/c36a3eeb-51e9-4cf4-8e40-1f8b1ff7b6e6)
+
 

@@ -38,4 +38,8 @@ The aims of NoteFlow is to enable effective handling of educational materials an
 • 🗒️ **Empty Note**: Add new notes.<br>
 
 ## 🖼️ GUI:
+![SignIn_SignUp](https://github.com/user-attachments/assets/cf73b6f2-5601-4eab-b83b-8e215256bb5f)
+![home](https://github.com/user-attachments/assets/6abe3d8f-c376-4e2c-b7bc-688b9f17e969)
+
+
 ## 💻 PROGRAMMING LANGUAGES:

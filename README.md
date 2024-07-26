@@ -30,11 +30,11 @@ The aims of NoteFlow is to enable effective handling of educational materials an
 
 
 ## 📋 FUNCTIONALITIES:
-• 🔑 **Sign In/Sign Up**: Sign in or sign up for an account.
-• **Home Page**: Overview of notes category.
-• **Search Bar Tab**: Search the previous notes.
-• **Inbox**: Notifying and informing for scheduled task or note.
-• **Empty Note**: Add new notes.
+• 🔑 **Sign In/Sign Up**: Sign in or sign up for an account.<br>
+• 🏠 **Home Page**: Overview of notes category.<br>
+• 🔎 **Search Bar Tab**: Search the previous notes.<br>
+• 📥 **Inbox**: Notifying and informing for scheduled task or note.<br>
+• 🗒️ **Empty Note**: Add new notes.<br>
 
 ## 🖼️ GUI:
 ## 💻 PROGRAMMING LANGUAGES:

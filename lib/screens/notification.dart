@@ -17,7 +17,7 @@ class Notification_Screen extends StatelessWidget {
           child: Text(
             "Inbox",
             style: TextStyle(
-              color: Color.fromARGB(255, 223, 223, 223),
+              color: Color.fromARGB(255, 47, 47, 47),
               fontSize: 18.0,
             ),
           ),
@@ -30,7 +30,7 @@ class Notification_Screen extends StatelessWidget {
               onPressed: () {},
               icon: const Icon(
                 Iconsax.setting,
-                color: Color.fromARGB(255, 223, 223, 223),
+                color: Color.fromARGB(255, 47, 47, 47),
               ),
             ),
           ),
@@ -40,7 +40,7 @@ class Notification_Screen extends StatelessWidget {
               onPressed: () {},
               icon: const Icon(
                 Iconsax.filter_square,
-                color: Color.fromARGB(255, 223, 223, 223),
+                color: Color.fromARGB(255, 122, 122, 118),
               ),
             ),
           ),
@@ -53,7 +53,7 @@ class Notification_Screen extends StatelessWidget {
           children: [
             Icon(
               Iconsax.direct_inbox,
-              color: Color.fromARGB(255, 223, 223, 223),
+              color: Color.fromARGB(255, 122, 122, 118),
               size: 60,
             ),
             SizedBox(height: 20),
@@ -61,7 +61,7 @@ class Notification_Screen extends StatelessWidget {
               "You're all caught up",
               style: TextStyle(
                 fontSize: 12.0,
-                color: Color.fromARGB(255, 223, 223, 223),
+                color: Color.fromARGB(255, 122, 122, 118),
               ),
             ),
             SizedBox(height: 5),

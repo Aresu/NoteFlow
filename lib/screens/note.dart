@@ -22,10 +22,10 @@ class _NoteScreenState extends State<Note_Screen> {
             children: [
               const SizedBox(height: 20),
               TextFormField(
-                cursorColor: const Color.fromARGB(255, 255, 255, 255),
+                cursorColor: Color.fromARGB(255, 0, 0, 0),
                 autofocus: true,
                 style: const TextStyle(
-                  color: Color.fromARGB(255, 223, 223, 223),
+                  color: Color.fromARGB(255, 46, 47, 45),
                   fontSize: 34,
                   fontWeight: FontWeight.bold,
                 ),
@@ -36,10 +36,10 @@ class _NoteScreenState extends State<Note_Screen> {
                 ),
               ),
               TextFormField(
-                cursorColor: const Color.fromARGB(255, 255, 255, 255),
+                cursorColor: Color.fromARGB(255, 0, 0, 0),
                 maxLines: null,
                 style:
-                    const TextStyle(color: Color.fromARGB(255, 223, 223, 223)),
+                    const TextStyle(color: Color.fromARGB(255, 46, 47, 45)),
                 decoration: const InputDecoration(
                   hintText: 'Tap here to continue...',
                   hintStyle: TextStyle(color: Colors.grey),
@@ -55,7 +55,7 @@ class _NoteScreenState extends State<Note_Screen> {
           ),
         ],
       ),
-      backgroundColor: const Color.fromARGB(255, 32, 32, 32),
+      backgroundColor: const Color.fromARGB(255, 249, 249, 247),
     );
   }
 }

@@ -30,7 +30,7 @@ The aims of NoteFlow is to enable effective handling of educational materials an
 
 
 ## 📋 FUNCTIONALITIES:
-• 
+• **Sign In/Sign Up**: Sign in or sign up for an account.
 
 ## 🖼️ GUI:
 ## 💻 PROGRAMMING LANGUAGES:

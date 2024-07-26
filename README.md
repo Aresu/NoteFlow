@@ -1,5 +1,6 @@
-## NoteFlow: The Smart Way to Manage Learning Contents ✍️
+![Screenshot_20240723-023018_5](https://github.com/user-attachments/assets/9781a98b-50e1-43a1-a656-af3fce15ddf5)
 
+## NoteFlow: The Smart Way to Manage Learning Contents ✍️
 
 ## 📃 FINAL PROJECT: 
 IT 311 - APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES.<br>

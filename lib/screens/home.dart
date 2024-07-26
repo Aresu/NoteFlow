@@ -65,11 +65,8 @@ class _Home_ScreenState extends State<Home_Screen> {
                   icon: const Icon(Iconsax.more_circle, color: Color.fromARGB(255, 0, 0, 0)),
                   offset: const Offset(-40, 0),
                   onSelected: (value) {
-                    // Handle menu item selection
                     if (value == 'edit') {
-                      // Edit action
                     } else if (value == 'delete') {
-                      // Delete action
                     }
                   },
                   itemBuilder: (BuildContext context) => [
@@ -343,11 +340,8 @@ class _Home_ScreenState extends State<Home_Screen> {
                                   icon: const Icon(Icons.more_vert,
                                       color: Color.fromARGB(255, 0, 0, 0)),
                                   onSelected: (value) {
-                                    // Handle menu item selection
                                     if (value == 'edit') {
-                                      // Edit action
                                     } else if (value == 'delete') {
-                                      // Delete action
                                     }
                                   },
                                   itemBuilder: (BuildContext context) => [

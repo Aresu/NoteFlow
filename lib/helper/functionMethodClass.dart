@@ -133,7 +133,6 @@ class AppBarText1 extends StatelessWidget implements PreferredSizeWidget {
             padding: const EdgeInsets.symmetric(horizontal: 18),
             child: IconButton(
               onPressed: () {
-                // function here
               },
               icon: const Icon(
                 Iconsax.close_circle,
@@ -164,7 +163,6 @@ class AppBarText2 extends StatelessWidget implements PreferredSizeWidget {
             color: Color.fromARGB(255, 32, 32, 32),
           ),
           onPressed: () {
-            // Add your share action here
           },
         ),
         IconButton(
@@ -173,14 +171,12 @@ class AppBarText2 extends StatelessWidget implements PreferredSizeWidget {
             color: Color.fromARGB(255, 32, 32, 32),
           ),
           onPressed: () {
-            // Add your more options action here
           },
         ),
         Padding(
           padding: const EdgeInsets.only(right: 8.0),
           child: ElevatedButton(
             onPressed: () {
-              // Add your done action here
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color.fromARGB(255, 241, 241, 239),

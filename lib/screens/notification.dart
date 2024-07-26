@@ -76,7 +76,7 @@ class Notification_Screen extends StatelessWidget {
           ],
         ),
       ),
-      backgroundColor: const Color.fromARGB(255, 32, 32, 32),
+      backgroundColor: const Color.fromARGB(255, 249, 249, 247),
     );
   }
 }

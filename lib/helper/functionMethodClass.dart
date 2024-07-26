@@ -26,11 +26,11 @@ class TabNavigation extends StatelessWidget {
             ],
           ),
           bottomNavigationBar: const TabBar(
-            unselectedLabelColor: Color.fromARGB(255, 132, 132, 132),
-            labelColor: Color.fromARGB(255, 194, 194, 194),
+            unselectedLabelColor: Color.fromARGB(255, 123, 123, 123),
+            labelColor: Color.fromARGB(255, 61, 61, 61),
             indicator: UnderlineTabIndicator(
               borderSide: BorderSide(
-                  width: 2.0, color: Color.fromARGB(255, 194, 194, 194)),
+                  width: 2.0, color: Color.fromARGB(255, 61, 61, 61)),
               insets: EdgeInsets.symmetric(horizontal: 40),
             ),
             tabs: [
@@ -48,7 +48,7 @@ class TabNavigation extends StatelessWidget {
               ),
             ],
           ),
-          backgroundColor: const Color.fromARGB(255, 32, 32, 32),
+          backgroundColor: Color.fromARGB(255, 249, 249, 247),
         ),
       ),
     );
@@ -127,7 +127,7 @@ class AppBarText1 extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       elevation: 0,
       backgroundColor: Colors.transparent,
-      foregroundColor: Colors.black,
+      foregroundColor: const Color.fromARGB(255, 255, 255, 255),
       actions: [
         Padding(
             padding: const EdgeInsets.symmetric(horizontal: 18),
@@ -137,7 +137,7 @@ class AppBarText1 extends StatelessWidget implements PreferredSizeWidget {
               },
               icon: const Icon(
                 Iconsax.close_circle,
-                color: Color.fromARGB(255, 223, 223, 223),
+                color: Color.fromARGB(255, 32, 32, 32),
               ),
             ))
       ],
@@ -156,12 +156,12 @@ class AppBarText2 extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       elevation: 0,
       backgroundColor: Colors.transparent,
-      foregroundColor: Colors.black,
+      foregroundColor: const Color.fromARGB(255, 255, 255, 255),
       actions: [
         IconButton(
           icon: const Icon(
             Iconsax.document_upload,
-            color: Color.fromARGB(255, 223, 223, 223),
+            color: Color.fromARGB(255, 32, 32, 32),
           ),
           onPressed: () {
             // Add your share action here
@@ -170,7 +170,7 @@ class AppBarText2 extends StatelessWidget implements PreferredSizeWidget {
         IconButton(
           icon: const Icon(
             Iconsax.more,
-            color: Color.fromARGB(255, 223, 223, 223),
+            color: Color.fromARGB(255, 32, 32, 32),
           ),
           onPressed: () {
             // Add your more options action here
@@ -183,14 +183,14 @@ class AppBarText2 extends StatelessWidget implements PreferredSizeWidget {
               // Add your done action here
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 55, 55, 55),
+              backgroundColor: const Color.fromARGB(255, 200, 200, 200),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
               ),
             ),
             child: const Text(
               'Done',
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
             ),
           ),
         ),
@@ -207,7 +207,7 @@ class Loader extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation(Colors.black),
+          valueColor: AlwaysStoppedAnimation(Color.fromARGB(255, 255, 255, 255)),
           strokeWidth: 10,
         ),
       ),

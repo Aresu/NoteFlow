@@ -24,7 +24,7 @@ class _Home_ScreenState extends State<Home_Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 32, 32, 32),
+        backgroundColor: Color.fromARGB(255, 249, 249, 247),
         title: Padding(
           padding: const EdgeInsets.all(2.0),
           child: Row(
@@ -34,9 +34,9 @@ class _Home_ScreenState extends State<Home_Screen> {
                 child: Container(
                   height: 40,
                   width: 40,
-                  color: const Color.fromARGB(255, 55, 55, 55),
+                  color: const Color.fromARGB(255, 241, 241, 239),
                   child: const Icon(Iconsax.user,
-                  color: Color.fromARGB(255, 146, 146, 146)),
+                      color: Color.fromARGB(255, 109, 109, 109)),
                 ),
               ),
               const SizedBox(width: 8.0),
@@ -47,22 +47,22 @@ class _Home_ScreenState extends State<Home_Screen> {
                     "NoteFlow",
                     style: TextStyle(
                         fontSize: 18.0,
-                        color: Color.fromARGB(255, 223, 223, 223),
+                        color: Color.fromARGB(255, 32, 32, 32),
                         fontWeight: FontWeight.w800),
                   ),
                   Text(
                     widget.email,
                     style: const TextStyle(
                         fontSize: 12.0,
-                        color: Color.fromARGB(255, 104, 104, 104)),
+                        color: Color.fromARGB(255, 151, 151, 151)),
                   ),
                 ],
               ),
               const Spacer(),
               IconButton(
                 icon: PopupMenuButton<String>(
-                  color: const Color.fromARGB(255, 40, 40, 40),
-                  icon: const Icon(Iconsax.more_circle, color: Colors.white),
+                  color: const Color.fromARGB(255, 215, 215, 215),
+                  icon: const Icon(Iconsax.more_circle, color: Color.fromARGB(255, 0, 0, 0)),
                   offset: const Offset(-40, 0),
                   onSelected: (value) {
                     // Handle menu item selection
@@ -78,12 +78,12 @@ class _Home_ScreenState extends State<Home_Screen> {
                       child: ListTile(
                         leading: Icon(
                           Iconsax.people,
-                          color: Color.fromARGB(255, 119, 119, 119),
+                          color: Color.fromARGB(255, 136, 136, 136),
                         ),
                         title: Text(
                           "Members",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Color.fromARGB(255, 0, 0, 0),
                             fontSize: 14,
                           ),
                         ),
@@ -94,12 +94,12 @@ class _Home_ScreenState extends State<Home_Screen> {
                       child: ListTile(
                         leading: Icon(
                           Iconsax.setting,
-                          color: Color.fromARGB(255, 119, 119, 119),
+                          color: Color.fromARGB(255, 136, 136, 136),
                         ),
                         title: Text(
                           "Settings",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Color.fromARGB(255, 0, 0, 0),
                             fontSize: 14,
                           ),
                         ),
@@ -110,12 +110,12 @@ class _Home_ScreenState extends State<Home_Screen> {
                       child: ListTile(
                         leading: Icon(
                           Iconsax.trash,
-                          color: Color.fromARGB(255, 119, 119, 119),
+                          color: Color.fromARGB(255, 136, 136, 136),
                         ),
                         title: Text(
                           "Trash",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Color.fromARGB(255, 0, 0, 0),
                             fontSize: 14,
                           ),
                         ),
@@ -126,12 +126,12 @@ class _Home_ScreenState extends State<Home_Screen> {
                       child: ListTile(
                         leading: Icon(
                           Iconsax.message_question,
-                          color: Color.fromARGB(255, 119, 119, 119),
+                          color: Color.fromARGB(255, 136, 136, 136),
                         ),
                         title: Text(
                           "Help",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Color.fromARGB(255, 0, 0, 0),
                             fontSize: 14,
                           ),
                         ),
@@ -155,7 +155,7 @@ class _Home_ScreenState extends State<Home_Screen> {
                 child: Text(
                   "Recent Notes",
                   style: TextStyle(
-                      color: Color.fromARGB(255, 119, 119, 119), fontSize: 12),
+                      color: Color.fromARGB(255, 136, 136, 136), fontSize: 12),
                 ),
               ),
             ],
@@ -171,10 +171,10 @@ class _Home_ScreenState extends State<Home_Screen> {
                 return SizedBox(
                   width: 160,
                   child: Card(
-                    shadowColor: Colors.black12,
+                    shadowColor: const Color.fromARGB(31, 255, 255, 255),
                     shape: RoundedRectangleBorder(
                       side: const BorderSide(
-                          color: Color.fromARGB(255, 70, 70, 70), width: 1),
+                          color: Color.fromARGB(255, 185, 185, 185), width: 1),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Column(
@@ -182,7 +182,7 @@ class _Home_ScreenState extends State<Home_Screen> {
                         Expanded(
                           child: Container(
                             decoration: const BoxDecoration(
-                              color: Color.fromARGB(255, 49, 49, 49),
+                              color: Color.fromARGB(255, 241, 241, 239),
                               borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(10),
                                 topRight: Radius.circular(10),
@@ -197,7 +197,7 @@ class _Home_ScreenState extends State<Home_Screen> {
                                   child: Icon(
                                     card.icon,
                                     size: 30,
-                                    color: Colors.white,
+                                    color: const Color.fromARGB(255, 0, 0, 0),
                                   ),
                                 ),
                               ],
@@ -207,7 +207,7 @@ class _Home_ScreenState extends State<Home_Screen> {
                         Expanded(
                           child: Container(
                             decoration: const BoxDecoration(
-                              color: Color.fromARGB(255, 37, 37, 37),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(10),
                                 bottomRight: Radius.circular(10),
@@ -220,7 +220,7 @@ class _Home_ScreenState extends State<Home_Screen> {
                                   alignment: Alignment.centerLeft,
                                   child: Text(
                                     card.title,
-                                    style: const TextStyle(color: Colors.white),
+                                    style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                                   ),
                                 ),
                               ),
@@ -246,29 +246,26 @@ class _Home_ScreenState extends State<Home_Screen> {
                 child: Text(
                   "Notes List",
                   style: TextStyle(
-                      color: Color.fromARGB(255, 119, 119, 119), fontSize: 12),
+                      color: Color.fromARGB(255, 136, 136, 136), fontSize: 12),
                 ),
               ),
               Row(
                 children: [
                   GestureDetector(
                     onTap: () {
-                      // Add your onPressed logic for Iconsax.refresh here
                     },
                     child: const Icon(
                       Iconsax.refresh,
-                      color: Color.fromARGB(255, 119, 119, 119),
+                      color: Color.fromARGB(255, 136, 136, 136),
                       size: 18,
                     ),
                   ),
                   const SizedBox(width: 5),
                   GestureDetector(
-                    onTap: () {
-                      
-                    },
+                    onTap: () {},
                     child: const Icon(
                       Iconsax.add,
-                      color: Color.fromARGB(255, 119, 119, 119),
+                      color: Color.fromARGB(255, 136, 136, 136),
                     ),
                   ),
                 ],
@@ -285,7 +282,7 @@ class _Home_ScreenState extends State<Home_Screen> {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 5),
                 child: Card(
-                  color: const Color.fromARGB(255, 50, 50, 50),
+                  color: const Color.fromARGB(255, 205, 205, 205),
                   child: ExpansionPanelList(
                     elevation: 0,
                     expandedHeaderPadding: EdgeInsets.zero,
@@ -306,13 +303,13 @@ class _Home_ScreenState extends State<Home_Screen> {
                                 Icon(
                                   tile.icon,
                                   color:
-                                      const Color.fromARGB(255, 119, 119, 119),
+                                      const Color.fromARGB(255, 136, 136, 136),
                                 ),
                               ],
                             ),
                             title: Text(
                               tile.title,
-                              style: const TextStyle(color: Colors.white),
+                              style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                             ),
                           );
                         },
@@ -330,22 +327,21 @@ class _Home_ScreenState extends State<Home_Screen> {
                                     SizedBox(width: 5),
                                     Icon(
                                       Icons.chevron_right,
-                                      color: Color.fromARGB(
-                                          255, 119, 119, 119),
+                                      color: Color.fromARGB(255, 119, 119, 119),
                                     ),
                                   ],
                                 ),
                                 tileColor:
-                                    const Color.fromARGB(255, 32, 32, 32),
+                                    const Color.fromARGB(255, 241, 241, 239),
                                 title: Text(
                                   tile.subNotes[subIndex],
-                                  style: const TextStyle(color: Colors.white),
+                                  style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                                 ),
                                 trailing: PopupMenuButton<String>(
-                                  color: const Color.fromARGB(255, 40, 40, 40),
+                                  color: const Color.fromARGB(255, 241, 241, 239),
                                   offset: const Offset(-40, 0),
                                   icon: const Icon(Icons.more_vert,
-                                      color: Colors.white),
+                                      color: Color.fromARGB(255, 0, 0, 0)),
                                   onSelected: (value) {
                                     // Handle menu item selection
                                     if (value == 'edit') {
@@ -360,13 +356,12 @@ class _Home_ScreenState extends State<Home_Screen> {
                                       child: ListTile(
                                         leading: Icon(
                                           Iconsax.message,
-                                          color: Color.fromARGB(
-                                              255, 119, 119, 119),
+                                          color: Color.fromARGB(255, 133, 133, 133),
                                         ),
                                         title: Text(
                                           "Rename",
                                           style: TextStyle(
-                                            color: Colors.white,
+                                            color: Color.fromARGB(255, 0, 0, 0),
                                             fontSize: 14,
                                           ),
                                         ),
@@ -377,13 +372,12 @@ class _Home_ScreenState extends State<Home_Screen> {
                                       child: ListTile(
                                         leading: Icon(
                                           Iconsax.edit,
-                                          color: Color.fromARGB(
-                                              255, 119, 119, 119),
+                                          color: Color.fromARGB(255, 133, 133, 133),
                                         ),
                                         title: Text(
                                           "Edit",
                                           style: TextStyle(
-                                            color: Colors.white,
+                                            color: Color.fromARGB(255, 0, 0, 0),
                                             fontSize: 14,
                                           ),
                                         ),
@@ -394,13 +388,12 @@ class _Home_ScreenState extends State<Home_Screen> {
                                       child: ListTile(
                                         leading: Icon(
                                           Iconsax.trash,
-                                          color: Color.fromARGB(
-                                              255, 119, 119, 119),
+                                          color: Color.fromARGB(255, 133, 133, 133),
                                         ),
                                         title: Text(
                                           "Trash",
                                           style: TextStyle(
-                                            color: Colors.white,
+                                            color: Color.fromARGB(255, 0, 0, 0),
                                             fontSize: 14,
                                           ),
                                         ),
@@ -413,7 +406,8 @@ class _Home_ScreenState extends State<Home_Screen> {
                           ),
                         ),
                         isExpanded: _isExpanded[index],
-                        backgroundColor: const Color.fromARGB(255, 32, 32, 32),
+                        backgroundColor:
+                            const Color.fromARGB(255, 241, 241, 239),
                       ),
                     ],
                   ),
@@ -423,7 +417,7 @@ class _Home_ScreenState extends State<Home_Screen> {
           )
         ],
       ),
-      backgroundColor: const Color.fromARGB(255, 32, 32, 32),
+      backgroundColor: Color.fromARGB(255, 249, 249, 247),
     );
   }
 }

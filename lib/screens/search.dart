@@ -8,17 +8,18 @@ class Search_Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 32, 32, 32),
+      backgroundColor: const Color.fromARGB(255, 249, 249, 247),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 32, 32, 32),
+        backgroundColor: const Color.fromARGB(255, 249, 249, 247),
         title: Padding(
           padding: const EdgeInsets.all(0),
           child: TextField(
             cursorColor: const Color.fromARGB(255, 255, 255, 255),
-            style: const TextStyle(color: Color.fromARGB(255, 223, 223, 223)),
+            style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+            autofocus: true,
             decoration: InputDecoration(
               filled: true,
-              fillColor: const Color.fromARGB(255, 36, 36, 36),
+              fillColor: const Color.fromARGB(255, 255, 255, 255),
               hintText: 'Search...',
               hintStyle:
                   const TextStyle(color: Color.fromARGB(255, 146, 146, 146)),
@@ -63,7 +64,7 @@ class Search_Screen extends StatelessWidget {
                   (index) {
                     final tile = customListTiles[index];
                     return Card(
-                      color: const Color.fromARGB(255, 40, 40, 40),
+                      color: const Color.fromARGB(255, 255, 255, 255),
                       child: ListTile(
                         leading: Row(
                           mainAxisSize: MainAxisSize.min,
@@ -78,7 +79,7 @@ class Search_Screen extends StatelessWidget {
                         title: Text(
                           tile.title,
                           textAlign: TextAlign.left,
-                          style: const TextStyle(color: Colors.white),
+                          style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                         ),
                       ),
                     );

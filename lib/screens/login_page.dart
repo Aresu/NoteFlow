@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage_Screen> {
 
   @override
   Widget build(BuildContext context) {
-    myColor = const Color.fromARGB(255, 32, 32, 32);
+    myColor = const Color.fromARGB(255, 223, 223, 223);
     mediaSize = MediaQuery.of(context).size;
     return Container(
       decoration: BoxDecoration(
@@ -36,36 +36,12 @@ class _LoginPageState extends State<LoginPage_Screen> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Stack(children: [
-          Positioned(top: 80, child: _buildTop()),
           Positioned(bottom: 0, child: _buildBottom()),
         ]),
       ),
     );
   }
 
-  Widget _buildTop() {
-    return SizedBox(
-      width: mediaSize.width,
-      child: const Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            Icons.layers,
-            size: 100,
-            color: Colors.white,
-          ),
-          Text(
-            "NoteFlow",
-            style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w800,
-                fontSize: 40,
-                letterSpacing: 2),
-          )
-        ],
-      ),
-    );
-  }
 
   Widget _buildBottom() {
     return SizedBox(
@@ -78,13 +54,13 @@ class _LoginPageState extends State<LoginPage_Screen> {
           ),
           border: Border(
             top: BorderSide(
-              color: Colors.white,
+              color: Color.fromARGB(255, 0, 0, 0),
               width: 2,
             ),
           ),
         ),
         child: Card(
-          color: const Color.fromARGB(255, 32, 32, 32),
+          color: Color.fromARGB(255, 255, 255, 255),
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(30),
@@ -109,9 +85,9 @@ class _LoginPageState extends State<LoginPage_Screen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          "Welcome!",
+          "Welcome to NoteFlow!",
           style: TextStyle(
-              color: Color.fromARGB(255, 223, 223, 223),
+              color: Color.fromARGB(255, 32, 32, 32),
               fontSize: 24,
               fontWeight: FontWeight.w500),
         ),
@@ -142,21 +118,21 @@ class _LoginPageState extends State<LoginPage_Screen> {
   Widget _buildInputField(TextEditingController controller,
       {bool isPassword = false}) {
     return TextFormField(
-      cursorColor: Colors.white,
+      cursorColor: const Color.fromARGB(255, 0, 0, 0),
       controller: controller,
       style: const TextStyle(
-        color: Color.fromARGB(255, 223, 223, 223),
+        color: Color.fromARGB(255, 32, 32, 32),
         fontSize: 16,
       ),
       decoration: InputDecoration(
         focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
         ),
         enabledBorder: const UnderlineInputBorder(
           borderSide: BorderSide(color: Color.fromARGB(255, 70, 70, 70)),
         ),
         border: const UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
         ),
         suffixIcon: isPassword
             ? GestureDetector(
@@ -167,12 +143,12 @@ class _LoginPageState extends State<LoginPage_Screen> {
                 },
                 child: Icon(
                   _obscurePassword ? Iconsax.eye : Iconsax.eye_slash,
-                  color: const Color.fromARGB(255, 223, 223, 223),
+                  color: Color.fromARGB(255, 0, 0, 0),
                 ),
               )
             : const Icon(
                 Iconsax.sms,
-                color: Color.fromARGB(255, 223, 223, 223),
+                color: Color.fromARGB(255, 0, 0, 0),
               ),
       ),
       obscureText: isPassword && _obscurePassword,
@@ -193,7 +169,7 @@ class _LoginPageState extends State<LoginPage_Screen> {
           children: [
             Theme(
               data: ThemeData(
-                unselectedWidgetColor: Colors.white,
+                unselectedWidgetColor: const Color.fromARGB(255, 0, 0, 0),
               ),
               child: Checkbox(
                 value: rememberUser,
@@ -202,8 +178,8 @@ class _LoginPageState extends State<LoginPage_Screen> {
                     rememberUser = value ?? false;
                   });
                 },
-                checkColor: Colors.black,
-                activeColor: Colors.white,
+                checkColor: Color.fromARGB(255, 255, 255, 255),
+                activeColor: const Color.fromARGB(255, 0, 0, 0),
               ),
             ),
             _buildGreyText("Remember me"),
@@ -231,8 +207,8 @@ class _LoginPageState extends State<LoginPage_Screen> {
         }
       },
       style: ElevatedButton.styleFrom(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.black,
+        foregroundColor: const Color.fromARGB(255, 0, 0, 0),
+        backgroundColor: const Color.fromARGB(255, 223, 223, 223),
         minimumSize: const Size(double.infinity, 50),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),

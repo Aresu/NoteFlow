@@ -46,7 +46,6 @@ The aims of NoteFlow is to enable effective handling of educational materials an
 
 
 ## 💻 PROGRAMMING LANGUAGES:
-![flutter](https://github.com/user-attachments/assets/bf72f3ed-e5fc-49a9-b5c7-8e94b2f26a73)
-![dart](https://github.com/user-attachments/assets/c36a3eeb-51e9-4cf4-8e40-1f8b1ff7b6e6)
-
+• Flutter
+• Dart
 
